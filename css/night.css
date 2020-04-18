@@ -1,0 +1,104 @@
+body{
+	background-color: #1f1f1f !important;
+	color: LightGrey !important;
+}
+
+.header {
+	background-color: #1f1f1f !important;
+}
+
+.nav-link{
+	color: LightGrey !important; 
+}
+
+/* MAIN PAGE */
+
+.bg-black {
+	background-color: #444444 !important;
+}
+
+.fast_case{
+	background-image: linear-gradient(to right, #494949, rgba(255,0,0,0)) !important;
+}
+
+.ticket-item-delete a i{
+	color: LightGrey;
+}	
+
+/* ADD TICKET */
+
+.case-list {
+	background-color: #444444 !important;
+	color: LightGrey; 
+}
+
+.add-ticket-texarea {
+	background-color: #444444 !important;
+	color: LightGrey;
+}
+
+.submit_button {
+	color: LightGrey;
+}
+
+.check:hover svg {
+  stroke: LightGrey;
+}
+#cbx:checked + .check svg {
+  stroke: LightGrey;
+}
+
+/* ADD TEAM */
+
+.add-team-input {
+	background-color: #444444 !important;
+	color: LightGrey;
+}
+
+/* TEAM USERS */
+
+.team-select-list {
+	height: 48px;
+	color: lightgray;
+	background-color: #444444 !important;
+	border-left: solid 1px lightgray;
+}
+
+/* SETTINGS */
+
+.wrapper {
+	width: 199px;
+}
+
+.switch_box {
+	max-width: 199px;
+	height: 48px;
+	border-left: solid 1px lightgray;
+}
+
+.submit-btn {
+	background-color: rgb(255,255,255,0);
+	color: LightGrey;
+}
+
+.color-code {
+	width: 199px !important;
+	height: 48px;
+	color: lightgray;
+	background-color: #444444 !important;
+	border-left: solid 1px lightgray;
+}
+
+/* FOOTER */
+
+.footer{
+	width: 44.2rem;
+	height: 50px;
+	position: fixed;
+	bottom: 0;
+	background-color: #1f1f1f;
+}
+
+.created-by {
+	opacity: 0.2;
+}

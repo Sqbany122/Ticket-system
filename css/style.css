@@ -1,0 +1,553 @@
+html, body{
+	width: 100%;
+	max-height: 90%;
+	margin-bottom: 50px;
+	overflow: auto;
+}
+
+body{
+	overflow: auto;
+}
+
+/* HEADER STYLES */
+.header{
+	border-bottom: .05rem solid LightGrey; 
+	width: 100%;
+	position: fixed;
+	top: 0;
+	background-color: white;
+}
+
+.header_box{
+	max-width: 46rem; 
+	margin: 0 auto;
+}
+
+.header_box a img{
+	float: left; 
+	width: 70px;
+	margin-left: 15px; 
+	margin-top: 10px;
+}
+
+.nav{
+	margin-top: 10px;
+}
+
+.nav-link{
+	color: black; 
+	font-size: 20px;
+}
+
+.container{
+	max-width: 46rem !important; 
+	margin-top: 100px !important;
+}
+
+.nav .nav-item {
+	height: 60px;
+}
+
+.nav .nav-item a {
+	color: #000;
+}
+
+/* EXPAND MENU */
+
+.nav li ul {
+	list-style-type: none;
+	display: none;
+}
+
+.nav li:hover ul {
+	display: block;
+	position: absolute;
+	width: 120px; 
+}
+
+.nav li ul li {
+	width: 120px;
+	border: .05rem solid LightGrey;
+	background-color: LightGrey;
+	padding: 10px;
+	margin: 14px 0 0 -50px;
+}
+
+.nav li ul li:nth-child(2) {
+	width: 120px;
+	border: .05rem solid LightGrey;
+	background-color: LightGrey;
+	padding: 10px;
+	margin: 2px 0 0 -50px;
+}
+
+.nav li ul .changelog {
+	width: 120px;
+	border: .05rem solid LightGrey;
+	background-color: LightGrey;
+	padding: 10px;
+	margin: 14px 0 0 -35px;
+}
+
+.nav li ul li a {
+	width: 100%;
+	height: 100%;	
+	text-decoration: none;
+	color: #000;
+}
+
+/* TICKET LIST STYLES */
+.header_div{
+	border: 1px solid LightGrey;
+}
+
+.display-3{
+	text-align: center;
+}
+
+.bg-black{
+	background-color: #1f1f1f;
+	color: white;
+}
+
+.ticket_box_before{
+	height: 40px; 
+	display: block; 
+}
+
+.fast_case{
+	background-image: linear-gradient(to right, LightGrey, rgba(255,0,0,0));
+}
+
+.ticket_box{
+	height: auto; 
+	display: block; 
+	margin: 10px 0 150px 0;
+}
+
+.ticket-box-inside{
+	height: 40px; 
+	display: block; 
+	margin-top: 5px;
+	border: 1px solid LightGrey;
+	font-size: 18px;
+}
+
+/* STATIC ITEMS */
+.ticket-item-counter-static{
+	width: 40px;
+	height: 40px;
+	float: left; 
+	text-align: center; 
+	font-size: 18px;
+	padding-top: 6px;
+	margin-right: 2px;
+}
+
+.ticket-item-username-static{
+	width: 200px; 
+	height: 40px; 
+	float: left; 
+	text-align: center;
+	font-size: 18px;
+	padding-top: 6px;
+	margin-right: 2px;
+}
+
+.ticket-irem-sprawa-static{
+	width: 308px; 
+	height: 40px; 
+	float: left; 
+	text-align: center;
+	font-size: 18px;
+	padding-top: 6px;
+	margin-right: 2px;
+}
+
+.ticket-item-hour-admin-static{
+	width: 110px; 
+	height: 40px; 
+	float: left; 
+	text-align: center;
+	font-size: 18px;
+	padding-top: 6px;
+	margin-right: 2px;
+}
+
+.ticket-item-hour-admin-static-permision {
+	width: 152px; 
+	height: 40px; 
+	float: left; 
+	text-align: center;
+	font-size: 18px;
+	padding-top: 6px;
+}
+
+.ticket-item-hour-static{
+	width: 122px; 
+	height: 40px; 
+	float: left; 
+	text-align: center;
+	font-size: 18px;
+	padding-top: 6px;
+	margin-right: 2px;
+}
+
+.ticket-item-delete-static{
+	width: 40px; 
+	height: 40px; 
+	float: left; 
+	text-align: center;  
+	padding: 0;
+}
+
+/* ITEMS FROM SQL */
+.ticket-item-counter{
+	width: 40px;
+	height: 40px;
+	float: left; 
+	text-align: center; 
+	border: none;
+	margin-right: 1.5px;
+	padding-top: 6px;
+}
+
+.ticket-item-username{
+	width: 200px; 
+	height: 40px; 
+	float: left; 
+	border: none; 
+	text-align: center;
+	margin-right: 1.5px;
+	padding-top: 6px;
+}
+
+.ticket-irem-sprawa{
+	width: 308px; 
+	height: 40px; 
+	float: left; 
+	border: none; 
+	text-align: center;
+	margin-right: 1.5px;
+	padding-top: 6px;
+}
+
+.ticket-item-hour-admin{
+	width: 110px; 
+	height: 40px; 
+	float: left; 
+	border: none; 
+	text-align: center;
+	margin-right: 1.5px;
+	padding-top: 6px;
+}
+
+.ticket-item-hour{
+	width: 151px; 
+	height: 40px; 
+	float: left; 
+	border: none;
+	text-align: center;
+	padding-top: 6px;
+}
+
+.ticket-item-delete{
+	width: 40px; 
+	height: 40px; 
+	float: left; 
+	text-align: center; 
+	border: none; 
+	padding: 0;
+}
+
+.ticket-item-delete a{
+	background: none; 
+	border: none;
+}
+
+.ticket-item-delete a i{
+	color: #1f1f1f; 
+	font-size: 24px; 
+	padding: 7px 11px 7px 11px;
+}
+
+.ticket-description {
+	width: 100%; 
+	position: relative; 
+	height: auto; 
+	background-color: rgb(255,255,255,0); 
+	text-align: left; 
+	word-wrap: break-word; 
+	margin: 3px 0 3px 0;
+}
+
+.ticket-description-inside {
+	padding: 5px; 
+	border: solid 1px LightGrey
+}
+
+/* ADD TICKET STYLES */
+.add-ticket-box{
+	text-align:center; 
+	border: 1px solid LightGrey;
+}
+
+.h3-header{ 
+	font-size: 30px !important;
+}
+
+.case-list{
+	width: 500px; 
+	margin-top: 20px; 
+	border: none; 
+	height: 40px; 
+	border: solid 1px LightGrey; 
+	margin-bottom: 20px; 
+	text-indent: 10px;
+	outline: none;
+}
+
+.add-ticket-texarea {
+	width: 500px; 
+	height: 200px;
+	outline: none;
+	padding: 10px;
+	border: 1px solid LightGrey; 
+}
+
+.fast-case-checkbox{
+	margin: 10px 0 15px 0;
+}
+
+.submit_button{
+	width: 150px; 
+	height: 50px; 
+	border: 1px solid LightGrey; 
+	background: none;
+}
+
+/* LOGOWANIE I REJESTRACJA */
+.form-signin{
+	max-width: 330px; 
+	padding: 15px; 
+	margin: 250px auto; 
+	vertical-align: middle;
+}
+
+.login_h1{
+	font-size: 30px; 
+	color: grey;
+}
+
+.input-username{
+	border: solid 1px LightGrey; 
+	height: 50px; 
+	text-indent: 10px; 
+	margin-bottom: 5px;
+}
+
+.input-password{
+	border: solid 1px LightGrey; 
+	height: 50px; 
+	text-indent: 10px; 
+	margin-bottom: 20px;
+}
+
+.sign-bttn{
+	background-color: #1f1f1f !important; 
+	border: solid 1px LightGrey !important; 
+	color: white !important; 
+	border-radius: 0px !important;
+}
+
+/* CHECKBOX */
+.check {
+  cursor: pointer;
+  position: relative;
+  margin: auto;
+  width: 30px;
+  height: 30px;
+  -webkit-tap-highlight-color: transparent;
+  transform: translate3d(0, 0, 0);
+  margin-right: 10px;
+}
+.check:before {
+  content: "";
+  position: absolute;
+  top: -15px;
+  left: -15px;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: rgba(34,50,84,0.03);
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+.check svg {
+  position: relative;
+  z-index: 1;
+  fill: none;
+  stroke: LightGrey;
+  stroke-width: 1;
+  transform: translate3d(0, 0, 0);
+  transition: all 0.2s ease;
+}
+.check svg path {
+  stroke-dasharray: 60;
+  stroke-dashoffset: 0;
+}
+.check svg polyline {
+  stroke-dasharray: 22;
+  stroke-dashoffset: 66;
+}
+.check:hover:before {
+  opacity: 1;
+}
+.check:hover svg {
+  stroke: #1f1f1f;
+}
+#cbx:checked + .check svg {
+  stroke: #1f1f1f;
+}
+#cbx:checked + .check svg path {
+  stroke-dashoffset: 60;
+  transition: all 0.3s linear;
+}
+#cbx:checked + .check svg polyline {
+  stroke-dashoffset: 42;
+  transition: all 0.2s linear;
+  transition-delay: 0.15s;
+}
+
+/* ADD TEAM */
+
+.add-team-box {
+	text-align:center; 
+	border: 1px solid LightGrey;
+	padding: 50px 0 30px 0;
+}
+
+.add-team-input {
+	width: 60%;
+	padding: 10px;
+	border: 1px solid LightGrey;
+	font-size: 20px;
+	margin-bottom: 10px;
+	text-align: center;
+	outline: none;
+}
+
+/* SHOW TEAM */
+
+.single-team {
+	width: 100%;
+	height: 50px;
+	border: 1px solid LightGrey;
+	margin-top: 10px;
+	padding: 0 10px 0 10px;
+	font-size: 18px;
+}
+
+.team-name {
+	float: left;
+	line-height: 47px;
+}
+
+.count-members {
+	float: right;
+	line-height: 47px;
+}
+
+
+/* USERS IN TEAM */
+
+.single-user {
+	width: 100%;
+	height: 50px;
+	border: 1px solid LightGrey;
+	margin-top: 10px;
+	padding: 0 0 0 10px;
+	font-size: 18px;
+	line-height: 47px;
+}
+
+.team-select-list {
+	float: right;
+	width: 250px;
+	height: 49px;
+	border: none;
+	padding: 0 10px 0 10px;
+	background-color: LightGrey;
+  	-webkit-appearance: none;
+  	text-align-last:center;	
+  	outline: none;
+}
+
+/* SETTINGS */
+
+.settings {
+	width: 100%;
+	height: 50px;
+	border: 1px solid LightGrey;
+	margin-top: 10px;
+	padding: 0 0 0 10px;
+	font-size: 18px;
+}
+
+.crit-name {
+	float: left;
+	line-height: 50px;
+}
+
+.color-code {
+	float: right;
+	border:none;
+	width: 198px;
+	height: 49px;
+	background-color: LightGrey;
+	outline: none;
+	text-align: center;
+}
+
+.submit-btn {
+	width: 100%;
+	height: 50px;
+	font-size: 20px;
+	margin-top: 10px;
+	border: 1px solid LightGrey;
+}
+
+/* CHANGELOG */
+
+.changelog-main {
+	text-align: left;
+}
+
+.changelog-version {
+	padding: 5px 10px 5px 10px;
+	width: 200px;
+	text-align: center;
+	border: 1px solid LightGrey;
+}
+
+.changelog-version-content {
+	border: 1px solid LightGrey;
+	padding: 10px;
+	margin-bottom: 30px;
+}
+
+/* STOPKA */
+
+.footer{
+	width: 44.2rem;
+	height: 50px;
+	position: fixed;
+	bottom: 0;
+	background-color: #fff;
+}
+
+.created-by {
+	text-align: left;
+	line-height: 50px;
+	opacity: 0.5;
+}
